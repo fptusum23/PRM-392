@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#45629e"
+    android:contextClickable="false"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/loginform"
+        android:layout_width="322dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#C0C0C0"
+            app:boxBackgroundColor="@color/material_on_surface_stroke"
+            app:boxStrokeColor="#C0C0C0"
+            app:hintTextColor="#C0C0C0">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#45629e"
+                android:focusableInTouchMode="true"
+                android:hint="@string/email_or_phone"
+                android:textColor="#F6E9E9"
+                app:boxBackgroundColor="@color/material_on_surface_stroke" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#C0C0C0"
+                app:boxStrokeColor="#C0C0C0"
+                app:hintTextColor="#C0C0C0">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputpasword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#45629e"
+                    android:textColor="#F6E9E9"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    app:boxBackgroundColor="@color/material_on_surface_stroke" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="110dp"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/facebook"
+            tools:srcCompat="@drawable/facebook" />
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="323dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="127dp"
+        android:hint="@string/log_in"
+        android:textColorHint="#C0C0C0"
+        android:textSize="15sp"
+        app:backgroundTint="@color/material_on_surface_stroke"
+        app:cornerRadius="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginform"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button4"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:background="#45629e"
+            android:backgroundTint="#45629e"
+            android:text="@string/sign_up_for_facebook"
+            android:textAppearance="@style/Widget.MaterialComponents.TextView"
+            android:textColor="#F6E9E9"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button5"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:background="#45629e"
+            android:backgroundTint="#45629e"
+            android:minHeight="48dp"
+            android:text="@string/forgot_password"
+            android:textAppearance="@style/Widget.MaterialComponents.TextView"
+            android:textColor="#F6E9E9"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="118dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <TextView
+            android:id="@+id/spinner"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/english"
+            android:textAlignment="center"
+            android:textColor="#C0C0C0"
+            android:textStyle="bold"
+            android:translationY="11dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button6"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:backgroundTint="#45629e"
+            android:text="@string/change"
+            android:textAppearance="@style/Widget.MaterialComponents.TextView"
+            android:textColor="#F6E9E9"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView2"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="229dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="48dp"
+        android:background="#F6E9E9"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton"
+        android:tooltipText="Hello"
+        app:srcCompat="@drawable/questionmark" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
