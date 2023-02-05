@@ -1,4 +1,4 @@
-# ASIGNMENT NODEJS -- FPTU
+# ASIGNMENT MOBILE -- FPTU
     - Author: [huyraw](https://github.com/huy-raw) || [Chu](https://github.com/dotranminhchu)
     - Subject: Mobile Programing aka PRM-392
 
