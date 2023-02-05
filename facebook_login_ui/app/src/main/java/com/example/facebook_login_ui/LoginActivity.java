@@ -54,6 +54,7 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(iLogin);
         } else {
             Toast.makeText(getApplicationContext(), "Wrong credential", Toast.LENGTH_SHORT).show();
+            password.setText("");
             textViewEmail.setVisibility(View.VISIBLE);
             textViewEmail.setBackgroundColor(Color.RED);
             counter--;

@@ -10,7 +10,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 import com.google.android.material.button.MaterialButton;
 
 public class HomeActivity extends AppCompatActivity {
-    AppCompatTextView userNameEditText;
+    AppCompatTextView userNameTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,11 +19,11 @@ public class HomeActivity extends AppCompatActivity {
         MaterialButton finishButton = findViewById(R.id.finishButton);
         MaterialButton logoutButton = findViewById(R.id.logoutButton);
 
-        userNameEditText = findViewById(R.id.userNameText);
+        userNameTextView = findViewById(R.id.userNameText);
 
         Intent iLogin = getIntent();
         String userName = iLogin.getStringExtra("userName");
-        userNameEditText.setText(String.format("Well come %s", userName));
+        userNameTextView.setText(String.format("Well come %s", userName));
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,6 +35,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent  intent = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(intent);
 
                 Intent startMain = new Intent(Intent.ACTION_MAIN);
                 startMain.addCategory(Intent.CATEGORY_HOME);
