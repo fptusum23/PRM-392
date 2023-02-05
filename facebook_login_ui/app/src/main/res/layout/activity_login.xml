@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:background="#45629e"
-    android:contextClickable="false"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
     <LinearLayout
         android:id="@+id/loginform"
@@ -22,6 +21,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
+            android:id="@+id/textViewEmail"
             android:layout_height="wrap_content"
             android:textColorHint="#C0C0C0"
             app:boxBackgroundColor="@color/material_on_surface_stroke"
@@ -29,7 +29,7 @@
             app:hintTextColor="#C0C0C0">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/inputemail"
+                android:id="@+id/inputEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#45629e"
@@ -40,13 +40,14 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
+                android:id="@+id/textViewPassword"
                 android:layout_height="wrap_content"
                 android:textColorHint="#C0C0C0"
                 app:boxStrokeColor="#C0C0C0"
                 app:hintTextColor="#C0C0C0">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/inputpasword"
+                    android:id="@+id/inputPasword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#45629e"
@@ -82,7 +83,7 @@
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton"
+        android:id="@+id/loginButton"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="323dp"
         android:layout_height="49dp"
@@ -116,7 +117,7 @@
         tools:visibility="visible">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/button4"
+            android:id="@+id/registerButton"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="38dp"
@@ -131,7 +132,7 @@
             tools:ignore="TouchTargetSizeCheck" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/button5"
+            android:id="@+id/fogotPassword"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="38dp"
@@ -198,7 +199,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton"
         android:tooltipText="Hello"
         app:srcCompat="@drawable/questionmark" />
 

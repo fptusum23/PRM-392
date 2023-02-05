@@ -7,4 +7,6 @@
     <string name="email_or_phone">Email or Phone</string>
     <string name="change">Change</string>
     <string name="english">English</string>
+    <string name="finish">Finish</string>
+    <string name="logout">Logout</string>
 </resources>
